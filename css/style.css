@@ -733,3 +733,165 @@ footer {
             margin-left: 10px; }
             .index-section-two .section-two-container .section-two-wrapper .container-two .container-two-box-three .box-time p span {
               text-decoration: underline; }
+
+.news-section-one {
+  background-color: #F6F8F9; }
+  .news-section-one .news-container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto; }
+    .news-section-one .news-container .news-title {
+      padding-bottom: 42px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .news-section-one .news-container .news-title .news-div-img {
+        height: 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        max-width: 198px;
+        width: 100%; }
+        .news-section-one .news-container .news-title .news-div-img img {
+          height: 16px; }
+        .news-section-one .news-container .news-title .news-div-img .news-div-title {
+          max-width: 152px;
+          width: 100%;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .news-section-one .news-container .news-title .news-div-img .news-div-title h4 {
+            color: #343638;
+            text-transform: uppercase;
+            font-family: 'acumin-pro',sans-serif;
+            font-weight: 700;
+            font-size: 11px; }
+          .news-section-one .news-container .news-title .news-div-img .news-div-title .news-h4-two {
+            color: #A6ADB4; }
+            .news-section-one .news-container .news-title .news-div-img .news-div-title .news-h4-two::before {
+              content: '/';
+              display: inline-block;
+              font-family: 'Helvetica', sans-serif;
+              font-size: 11px;
+              font-weight: 700;
+              margin-right: 20px; }
+      .news-section-one .news-container .news-title .news-icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border: 2px solid #EBEDED;
+        max-width: 40px;
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        border-radius: 4px; }
+    .news-section-one .news-container .news-div-two-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .news-section-one .news-container .news-div-two-wrapper .news-div-two {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-image: url("../img/img10.jpg");
+        background-repeat: no-repeat;
+        max-width: 580px;
+        width: 100%;
+        height: 500px; }
+        .news-section-one .news-container .news-div-two-wrapper .news-div-two .news-h2-title {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .news-section-one .news-container .news-div-two-wrapper .news-div-two .news-h2-title::after {
+            content: '';
+            border-bottom: 2px solid #FA6980;
+            max-width: 40px;
+            width: 100%;
+            display: block;
+            margin-top: 20px; }
+          .news-section-one .news-container .news-div-two-wrapper .news-div-two .news-h2-title h2 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 32px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700; }
+        .news-section-one .news-container .news-div-two-wrapper .news-div-two p {
+          font-family: 'Helvetica', sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          color: #fff;
+          margin-top: 20px;
+          margin-bottom: 65px; }
+      .news-section-one .news-container .news-div-two-wrapper .news-div-three form {
+        max-width: 360px;
+        width: 100%;
+        margin-left: 110px;
+        height: 246px; }
+        .news-section-one .news-container .news-div-two-wrapper .news-div-three form .label-div .select-div {
+          width: 360px;
+          height: 40px;
+          cursor: pointer;
+          border: 2px solid #EBEDED;
+          border-radius: 6px;
+          position: relative; }
+          .news-section-one .news-container .news-div-two-wrapper .news-div-three form .label-div .select-div select {
+            width: 360px;
+            height: 40px;
+            border: none;
+            position: relative;
+            z-index: 99;
+            background: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            outline: none;
+            color: #A6ADB4;
+            padding-left: 12px; }
+          .news-section-one .news-container .news-div-two-wrapper .news-div-three form .label-div .select-div::after {
+            width: 6px;
+            height: 6px;
+            border-left: 3px solid #A6ADB4;
+            -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+            display: inline-block;
+            border-top: 3px solid #A6ADB4;
+            position: absolute;
+            top: 35%;
+            right: 20px;
+            content: " "; }

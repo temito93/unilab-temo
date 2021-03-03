@@ -1,0 +1,167 @@
+.news-section-one {
+    background-color: $nav-col;
+    .news-container {
+        
+        max-width: 1160px;
+        width: $w-100;
+        margin: $m-center;
+
+        .news-title {
+            padding-bottom: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .news-div-img {
+                height: 16px;
+                img{
+                    height: 16px;
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 198px;
+                width: $w-100;
+                .news-div-title {
+
+                    h4 {
+                        color: $black;
+                        text-transform: uppercase;
+                        font-family: 'acumin-pro',sans-serif;
+                        font-weight: $bold;
+                        font-size: 11px;
+                        
+                    }
+                    .news-h4-two {
+                        color: #A6ADB4;
+                        &::before {
+                            content: '/';
+                            display: inline-block;
+                            font-family: 'Helvetica', sans-serif;
+                            font-size: 11px;
+                            font-weight: $bold;
+                            margin-right: 20px;
+                            
+                            
+                        }
+                    }
+                    max-width: 152px;
+                    width: $w-100;
+                    justify-content: space-between;
+                    display: flex;
+                }
+            }
+
+            .news-icon {
+                display: flex;
+                align-items: center;
+                border: 2px solid #EBEDED;
+                max-width: 40px;
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                border-radius: 4px;
+            }
+        }
+        .news-div-two-wrapper {
+            display: flex;
+            .news-div-two {
+                display:flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url("../img/img10.jpg");
+                background-repeat: no-repeat;
+                max-width: 580px;
+                width: $w-100;
+                height: 500px;
+
+                .news-h2-title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &::after {
+                        content: '';
+                        border-bottom: 2px solid $pink;
+                        max-width: 40px;
+                        width: $w-100;
+                        display: block;
+                        margin-top: 20px;
+                    }
+                    h2 {
+                        font-family: 'Helvetica', sans-serif;
+                        font-size: 32px;
+                        text-transform: uppercase;
+                        color: #fff;
+                        font-weight: $bold;
+                    }
+                }
+
+                p{
+                    font-family: 'Helvetica', sans-serif;
+                    font-size: 16px;
+                    font-weight: $bold;
+                    color:#fff;
+                    margin-top: 20px;
+                    margin-bottom: 65px;
+                }
+            }
+
+            .news-div-three {
+                form {
+                    max-width: 360px;
+                    width: $w-100;
+                    
+                    margin-left: 110px;
+                    height: 246px;
+
+                    .label-div {
+                        .select-div {
+                            width: 360px;
+                            height: 40px;
+                            cursor: pointer;
+                            border: 2px solid #EBEDED;
+                            border-radius: 6px;
+                            position: relative;
+
+                            select {
+                                width: 360px;
+                                height: 40px;
+                                border: none;
+                                position: relative;
+                                z-index: 99;
+                                background: none;
+                                cursor: pointer;
+                                appearance: none;
+                                outline: none;
+                                color: $grey;
+                                padding-left: 12px;
+                                
+                            }
+                            &::after {
+                               
+                                width: 6px;
+                                height:6px;
+                                border-left: 3px solid $grey;
+                                
+                                
+                                transform: rotate(225deg);
+                                display: inline-block;
+                                border-top: 3px solid $grey;
+                                position: absolute;
+                                top: 35%;
+                                right: 20px;
+                                content: " ";
+                                
+                            }
+
+
+                        }    
+                    
+                        
+                    }
+                }
+            }
+        }
+    }
+}
