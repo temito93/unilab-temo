@@ -324,7 +324,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 56px 0 60px 142px; }
+    padding: 56px 0 60px 0px; }
     footer .footer-container .footer-logo h2 {
       font-family: 'acumin-pro',sans-serif;
       font-weight: 700;
@@ -371,7 +371,6 @@ footer {
           -ms-flex-align: center;
           align-items: center;
           border: 2px solid #CBD0D3;
-          padding-right: 20px;
           height: 40px;
           border-radius: 6px; }
           footer .footer-container .footer-form form .form-email input {
@@ -406,13 +405,26 @@ footer {
               font-weight: 400; }
             footer .footer-container .footer-form form .form-email input:focus {
               outline: none; }
+          footer .footer-container .footer-form form .form-email .email-send {
+            margin-left: 19px;
+            margin-right: 19px; }
       footer .footer-container .footer-form .form-p {
         margin-top: 16px; }
         footer .footer-container .footer-form .form-p p {
           font-family: 'Helvetica', sans-serif;
-          font-size: 13px;
+          font-size: 11px;
           font-weight: 400;
           color: #CBD0D3; }
+    footer .footer-container .footer-soc {
+      max-width: 160px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-left: 139.2px; }
 
 .index-section-one {
   background-color: #F6F8F9; }
