@@ -1,43 +1,143 @@
-.sec-one {
-    .sec-one-div {
-        @extend %sec-one-container;
-        h2 {
-            margin-bottom: 20px;
-            @extend %sec-one-h2;
-        }
-        .w3-animate-bottom {
-            @extend %animation-bottomh2;
-        }
-        .sec-one-h2 {
-            border-bottom: 3px dotted $soft-blue;
-            max-width: 1088px;
-            width: 100%;
-        }
-        .w3-animate-left {
-            @extend %animation-left;
-        }
+.index-section-one {
+    background-color: $nav-col;
+    .section-container {
+        padding-top: 41px;
+        max-width: 1160px;
+        width: $w-100;
+        margin: $m-center;
 
-        .product-list {
-            @extend %product-list-par;
-
-            .list {
-                @extend %list-par;
-
-                .box-one {
-                    .box-one-cont {
-                        display: flex;
-                        .product-p {
-                            @extend %product-p-par;
-                        }
+        .section-title {
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+                
+                font-family: 'Helvetica', sans-serif;
+                font-size: 24px;
+                font-weight: $bold;
+                text-transform: uppercase;
+            }
+            .title-arrow {
+                
+                i {
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        font-size: 10px;
                     }
-                    .r-more {
-                        @extend %read-more-par;
-                        .read-a {
-                            @extend %read-a-par;
-                        }
+
+                    &:nth-child(1) {
+                        opacity: 50%;
+                        margin-right: 40px;
                     }
                 }
             }
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            .box-one {
+                max-width: 360px;
+                width: $w-100;
+                height: 350px;
+                h4 {
+                    margin-left: 40px;
+                    margin-top: 40px;
+                    @extend %text-h3;
+                }
+                p {
+                    font-family: 'acumin-pro',sans-serif;
+                    font-weight: $regular;
+                    font-size: 13px;
+                    color: $grey;
+                    line-height: 25px;
+                    max-width: 240px;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    margin-left: 40px;
+                }
+                .box-time {
+                    margin-left: 40px;
+                    height: 16px;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        height: 15px;
+                        @extend %text-p;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .box-two {
+                max-width: 360px;
+                width: $w-100;
+                height: 350px;
+                h4 {
+                    margin-left: 40px;
+                    margin-top: 40px;
+                    @extend %text-h3;
+                }
+                p {
+                    font-family: 'acumin-pro',sans-serif;
+                    font-weight: $regular;
+                    font-size: 13px;
+                    color: $grey;
+                    line-height: 25px;
+                    max-width: 240px;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    margin-left: 40px;
+                }
+                .box-time {
+                    margin-left: 40px;
+                    height: 16px;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        height: 15px;
+                        @extend %text-p;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .box-three {
+                max-width: 360px;
+                width: $w-100;
+                height: 350px;
+                h4 {
+                    margin-left: 40px;
+                    margin-top: 40px;
+                    @extend %text-h3;
+                }
+                p {
+                    font-family: 'acumin-pro',sans-serif;
+                    font-weight: $regular;
+                    font-size: 13px;
+                    color: $grey;
+                    line-height: 25px;
+                    max-width: 240px;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    margin-left: 40px;
+                }
+                .box-time {
+                    margin-left: 40px;
+                    height: 16px;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        height: 15px;
+                        @extend %text-p;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+
         }
     }
 }

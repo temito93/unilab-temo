@@ -1,0 +1,27 @@
+{
+  "name": "unilab-temo",
+  "version": "1.0.0",
+  "description": "unilab",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://temito93.github.io/unilab-temo/"
+  },
+  "keywords": [
+    "World",
+    "News"
+  ],
+  "author": "Temo Jincharadze",
+  "license": "ISC"
+}

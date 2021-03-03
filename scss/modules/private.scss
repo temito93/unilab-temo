@@ -1,388 +1,68 @@
-// header navigation
-%header-nav-par {
-      display: flex;
-      max-width: 1088px;
-      width: $w-100;
-      margin: $m-center;
-      padding-top: $p-20;
-      justify-content: space-between;
-      align-items: center;
-      
-      
+//Logo Parameters
+    //For Logo Div
+%div-logo {
+    max-width: $p-38;
+    width: $w-100;
+    height: 12.8px;
+}
+
+    //For H2
+%logo {
+    font-family: 'Helvetica', sans-serif;
+    font-size: $p-13;
+    font-weight: $bold;
+    color: $pink;
+    text-transform: uppercase;
 }
 
 
-// li parameters
-%ul-li-par {
-    color: $soft-blue;
-    font-size: 18px;
-    padding-bottom: 10px;
+//navigation a parameters
+%a-parameters {
+    color: $black;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: $bold;
+    font-size: $p-11;
+    text-transform: uppercase;
 }
 
 
-// lang col-size
-%lang-par {
-    color: $soft-blue;
-    font-size: 18px;
+//h1-h2 parameters 
+%main-parameters {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 24px;
+    font-weight: $bold;
+    color: #fff;
 }
 
 
-// logo parameters
-%logo-par {
-    color: 	$soft-blue;
-    font-weight: bolder;
-    font-size: $p-40;
+//p parameters 
+%p-parameters {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: $regular;
+    font-size: 16px
 }
 
-
-
-
-
-// Pseudo divider for lang
-%divider {
-    content: " ";
-      width: 1.5px;
-      height: 18px;
-      background-color: #8ab5e5;
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 5px;
-      margin-right: 10px;
+//text-h2
+%text-h2 {
+    font-family: 'Helvetica', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: $bold;
+    color: $pink; 
 }
 
-
-// animation
-    // water
-    %water-animation {
-        position: relative;
-        height: 300px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        transform: translate3d(0, 0, 0);
-        
-    }
-
-    // ripple-one
-    %ripple-one-animation {
-        position: absolute;
-        top: 20%;
-        max-width: 525px;
-        width: 100%;
-        height: 525px;
-        border-radius: 45%;
-        transform-origin: 50% 48%;
-        animation: water 5s infinite linear;
-        background: hsla(212, 64%, 72%, 0.7);
-        z-index: 3;
-        transform: translate3d(0, 0, 0);
-    }
-
-    // ripple-two
-    %ripple-two-animation {
-        position: absolute;
-        max-width: 500px;
-        width: 100%;
-        height: 500px;
-        border-radius: 42%;
-        top: 20%;
-        transform-origin: 50% 48%;
-        animation: water 4s infinite linear;
-        background: hsla(212, 64%, 72%, 0.4);
-        z-index: 2;
-    }
-
-    // ripple-three
-    %ripple-three-animation {
-        position: absolute;
-        top: 20%;
-        max-width: 650px;
-        width: 100%;
-        height: 650px;
-        border-radius: 45%;
-        transform-origin: 50% 48%;
-        animation: water 6s infinite linear;
-        background: hsla(214, 55%, 73%, 0.4);
-        z-index: 1; 
-    }
-
-    // text
-    %text-animation {
-        color: white;
-        position: absolute;
-        top: 50%;
-        font-size: 28px;
-        font-family: Source Sans Pro;
-        font-weight: 300;
-        text-align: center;
-        letter-spacing: 0.7em;
-        animation: spacing 4s ease-out alternate infinite;
-        animation-delay: -5s;
-        z-index: 6;
-    }
-
-
-    // section one
-    %sec-one-container {
-        max-width: 1088px;
-        width: $w-100;
-        margin: 100px auto 100px auto;
-    }
-
-        // h2
-        %sec-one-h2 {
-            color: $soft-blue;
-            font-size: 40px;
-            width: 285px;
-            margin: 0 auto;
-            letter-spacing: 0.1em;
-            
-        }
-
-        // product list
-        %product-list-par {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        // list
-        %list-par {
-            margin-top: 100px;
-            max-width: 536px;
-            width: $w-100;
-            height: 253px;
-            border-radius: 20px;
-            background: $soft-blue;
-        }
-
-        // product-p 
-        %product-p-par {
-            margin-left: 50%;
-            transform:translate(-50%);
-            margin-top: $p-20;
-            color: #fff;
-            font-size: 25px;
-            white-space: nowrap;
-        }
-
-        // read-more
-        %read-more-par {
-            max-width: 112px;
-            width: $w-100;
-            margin-top: 180px;
-            margin-left: 400px;
-        }
-
-        // read-a 
-        %read-a-par {
-            color: #fff;
-            font-size: 15px;
-        }
-
-
-
-// contact
-        // contact-div
-        %contact-div-par {
-            max-width: 1088px;
-            width: $w-100;
-            margin: $m-center;
-            display: flex;
-            justify-content: space-between;
-
-        }
-
-
-        // form
-             // contact title
-             %contact-title-par {
-                margin-bottom: 80px;
-                border-bottom: 3px dotted $soft-blue;
-                width: 1088px;
-               
-            }
-
-
-            // user input
-            %user-input-par {
-                margin-right: 20px;
-                width: 250px;
-                height: 44px;
-                border-radius: 50px;
-                margin-top: 15px;
-                border: 2px solid #ddd;
-                color: rgb(143, 141, 141);
-                font-size: 15px;
-                padding-left: 5px;
-            }
-
-            // user input focus
-            %user-input-foc-par {
-                border-radius: 50px;
-                border-color: $soft-blue;
-                outline: none;
-            }
-
-            // surname input
-            %surname-input-par {
-                width: 250px;
-                height: 44px;
-                border-radius: 50px;
-                margin-top: 15px;
-                border: 2px solid #ddd;
-                color: rgb(143, 141, 141);
-                font-size: 15px;
-                padding-left: 5px;
-            }
-
-            //surname input focus
-            %surname-input-focus {
-                border-radius: 50px;
-                border-color: $soft-blue;
-                outline: none;
-            }
-
-
-            // email input
-            %email-input-par {
-                width: 520px;
-                height: 44px;
-                border-radius: 50px;
-                margin-top: 15px;
-                border: 2px solid #ddd;
-                color: rgb(143, 141, 141);
-                font-size: 15px;
-                padding-left: 5px;
-            }
-
-            // email focus
-            %email-focus-par {
-                border-radius: 50px;
-                border-color: $soft-blue;
-                outline: none;
-            }
-
-
-            // subject parameter
-            %subj-input-par {
-                width: 520px;
-                height: 44px;
-                border-radius: 50px;
-                margin-top: 15px;
-                border: 2px solid #ddd;
-                color: rgb(143, 141, 141);
-                font-size: 15px;
-                padding-left: 5px;
-            }
-            
-            // subject focus 
-            %subj-focus-par {
-                border-radius: 50px;
-                border-color: $soft-blue;
-                outline: none;
-            }
-
-
-            // text area parameter
-            %text-area-par {
-                width: 520px;
-                height: 250px;
-                margin-top: 15px;
-                border: 2px solid #ddd;
-                resize: none;
-                border-radius: 25px;
-                color: rgb(143, 141, 141);
-                font-size: 15px;
-                padding-left: 10px;
-            }
-
-            // text area focus
-            %text-area-focus-par {
-                border-color: $soft-blue;
-                outline: none;
-                border-radius: 25px;
-               
-            }
-
-            // submit parameter
-            %submit-par {
-                width: 160px;
-                height: 47px;
-                background-color: $soft-blue;
-                color: #fff;
-                border-radius: 50px;
-                border: 2px solid $soft-blue;
-                font-size: 17px;
-                cursor: pointer;
-            }
-
-            // submit hover {
-                %submit-hover {
-                    opacity: 0.8;
-                }
-
-
-
-            // contact info
-            %info-div-par {
-                color: rgb(165, 164, 164);
-                font-size: 19px;
-                
-            }
-
-            %info-a-par {
-                color: $soft-blue;
-                font-size: 20px;
-            }
-
-
-// footer 
-%footer-par {
-    background: $soft-blue;
-    width: 100%;
-    height: 260px;  
-    
-    
+//text h3
+%text-h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: $bold;
+    color: $black;  
 }
-           
-    // footer container
-    %f-container-par {
-        max-width: 1088px;
-        width: 100%;
-        margin: 0 auto;
-        
-    }
-            
-    // footer logo 
-    %footer-logo-par {
-        color: 	#fff;
-        font-weight: bolder;
-        font-size: $p-40;
-    }
-            
-    // animation parameters
-    %animation-bottom {
-        position:relative;
-        animation:animatebottom 1s;
-    }
 
-    %animation-bottomh2 {
-        position:relative;
-        animation:animatebottomh2 1s;
-    }
-
-
-
-    %animation-left {
-        position:relative;
-        animation:animateleft 1s;
-    }
-
-
-    %animation-right {
-        position:relative;
-        animation:animateright 1s;
-    }
-
-   
+//text p
+%text-p {
+    font-family: 'acumin-pro',sans-serif;
+    font-weight: $regular;
+    font-size: 13px;
+    color: $grey;
+}

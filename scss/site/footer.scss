@@ -1,60 +1,135 @@
 footer {
-    @extend %footer-par;
+    background-color: $grey;
+
     .footer-container {
-        @extend  %f-container-par;
-        .footer-wrapper {
-            padding-top: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .footer-logo {
-                height: $p-45;
-                .footer-logo-a {
-                    @extend %footer-logo-par;
+        max-width: 1160px;
+        width: $w-100;
+        margin: $m-center;
+        display: flex;
+        padding: 56px 0 60px 142px;
+
+        .footer-logo {
+            h2 {
+                font-family: 'acumin-pro',sans-serif;
+                font-weight: $bold;
+                font-size: 13px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+
+        .footer-nav-one {
+            margin-left: 60px;
+            nav {
+                ul {
+                    li {
+                        &:nth-child(2),
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            margin-top: 8px;
+                        }
+                        a {
+                            font-family: 'Helvetica', sans-serif;
+                            font-size: $p-13;
+                            font-weight: $bold;
+                            color: $ex-grey;
+                        }
+                    }
                 }
             }
         }
 
-        .footer-info {
-            .footer-phone {
-                display: flex;
-                align-items: center;
-                margin-bottom: 15px;
-                a{
-                    color: #fff;
-                    font-size: 17px;
-                    margin-left: 10px;
-                }
-            }
-
-            .footer-email {
-                display: flex;
-                align-items: center;
-                margin-bottom: 15px;
-                a{
-                    color: #fff;
-                    font-size: 17px;
-                    margin-left: 10px;
-                    letter-spacing: 0.1em;
-                }
-            }
-
-            .footer-loc {
-                display: flex;
-                align-items: center;
-                a{
-                    color: #fff;
-                    font-size: 17px;
-                    margin-left: 10px;
-                    letter-spacing: 0.1em;
+        .footer-nav-two {
+            margin-left: 41.7px;
+            nav {
+                ul {
+                    li {
+                        &:nth-child(2),
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            margin-top: 8px;
+                        }
+                        a {
+                            font-family: 'Helvetica', sans-serif;
+                            font-size: $p-13;
+                            font-weight: $bold;
+                            color: $ex-grey;
+                        }
+                    }
                 }
             }
         }
-        .footer-cop {
-            margin-top: 80px;
-            color: #fff;
-            font-style: italic;
-            font-size: 18px;
+
+
+        .footer-nav-three {
+            margin-left: 44.6px;
+            nav {
+                ul {
+                    li {
+                        &:nth-child(2),
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            margin-top: 8px;
+                        }
+                        a {
+                            font-family: 'Helvetica', sans-serif;
+                            font-size: $p-13;
+                            font-weight: $bold;
+                            color: $ex-grey;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-form {
+            margin-left: 219.8px;
+            form {
+                max-width: 262px;
+                width: 100%;
+                .form-email {
+                    display: flex;
+                    align-items: center;
+                    border: 2px solid $ex-grey;
+                    padding-right: 20px;
+                    
+                    height: 40px;
+                    border-radius: 6px;
+                    input {
+                        width: 207px;
+                        padding-left: 20px;
+                        
+                        &::placeholder {
+                            
+                            
+                            color: $ex-grey;
+                            font-family: 'Helvetica', sans-serif;
+                            font-size: $p-13;
+                            font-weight: $regular;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                       
+                        background-color: #A6ADB4;
+                        border: none;
+                        
+                        
+                    }
+
+                    
+                }
+            }
+
+            .form-p {
+                margin-top:16px;
+                p {
+                    font-family: 'Helvetica', sans-serif;
+                    font-size: $p-13;
+                    font-weight: $regular;
+                    color: $ex-grey;
+                }
+            }
         }
     }
 }
