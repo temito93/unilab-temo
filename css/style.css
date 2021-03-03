@@ -406,6 +406,7 @@ footer {
             footer .footer-container .footer-form form .form-email input:focus {
               outline: none; }
           footer .footer-container .footer-form form .form-email .email-send {
+            cursor: pointer;
             margin-left: 19px;
             margin-right: 19px; }
       footer .footer-container .footer-form .form-p {
