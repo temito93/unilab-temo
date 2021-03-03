@@ -1,0 +1,40 @@
+.about-section {
+    margin-bottom: 100px;
+    .about-container {
+        max-width: 1088px;
+        width: $w-100;
+        margin: 100px auto 0 auto;
+        h2 {
+            font-size:30px;
+            color: $soft-blue;
+            letter-spacing: 0.1em;
+        }
+        .w3-animate-left {
+            @extend %animation-left;
+        }
+        .h2-border {
+            max-width: 900px;
+            width: 100%;
+            border-bottom: 3px dotted $soft-blue;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        .w3-animate-bottom {
+            @extend %animation-bottom;
+        }
+        .about-info {
+            max-width: 900px;
+            width: 100%;
+            .about-p {
+                font-size:20px;
+                color: $soft-blue;
+                letter-spacing: 0.1em;
+                line-height: 1.5em;
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-bottom: 15px;
+                }
+             }
+        }
+    }
+}

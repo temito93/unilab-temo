@@ -1,0 +1,43 @@
+.sec-one {
+    .sec-one-div {
+        @extend %sec-one-container;
+        h2 {
+            margin-bottom: 20px;
+            @extend %sec-one-h2;
+        }
+        .w3-animate-bottom {
+            @extend %animation-bottomh2;
+        }
+        .sec-one-h2 {
+            border-bottom: 3px dotted $soft-blue;
+            max-width: 1088px;
+            width: 100%;
+        }
+        .w3-animate-left {
+            @extend %animation-left;
+        }
+
+        .product-list {
+            @extend %product-list-par;
+
+            .list {
+                @extend %list-par;
+
+                .box-one {
+                    .box-one-cont {
+                        display: flex;
+                        .product-p {
+                            @extend %product-p-par;
+                        }
+                    }
+                    .r-more {
+                        @extend %read-more-par;
+                        .read-a {
+                            @extend %read-a-par;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
