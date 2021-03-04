@@ -61,6 +61,7 @@
                 height: 40px;
                 padding: 10px;
                 border-radius: 4px;
+                cursor: pointer;
             }
         }
         .news-div-two-wrapper {
@@ -108,6 +109,8 @@
             }
 
             .news-div-three {
+                display: flex;
+                align-items: center;
                 form {
                     max-width: 360px;
                     width: $w-100;
@@ -116,7 +119,14 @@
                     height: 246px;
 
                     .label-div {
+                        label {
+                            font-family: 'acumin-pro',sans-serif;
+                            font-weight: $bold;
+                            font-size: 13px;
+                            color: $black;
+                        }
                         .select-div {
+                            margin-top: 13px;
                             width: 360px;
                             height: 40px;
                             cursor: pointer;
@@ -125,17 +135,21 @@
                             position: relative;
 
                             select {
-                                width: 360px;
-                                height: 40px;
+                                width: 356px;
+                                height: 36px;
                                 border: none;
                                 position: relative;
-                                z-index: 99;
+                                
                                 background: none;
                                 cursor: pointer;
                                 appearance: none;
                                 outline: none;
                                 color: $grey;
                                 padding-left: 12px;
+                                font-family: 'Helvetica', sans-serif;
+                                font-weight: $regular;
+                                font-size: 13px;
+                                
                                 
                             }
                             &::after {
@@ -160,7 +174,153 @@
                     
                         
                     }
+
+                    .div-keyword {
+                        margin-top: 40px;
+                        label {
+                            font-family: 'acumin-pro',sans-serif;
+                            font-weight: $bold;
+                            font-size: 13px;
+                            color: $black;
+                        }
+
+                        .div-input {
+                            margin-top: 10px;
+                            width: 360px;
+                            height: 40px;
+                            
+                            border: 2px solid #EBEDED;
+                            border-radius: 6px;
+                            input {
+                                width: 356px;
+                                height: 36px;
+                                border: none;
+                                
+                                
+                                background: none;
+                                
+                                appearance: none;
+                                outline: none;
+                                color: $grey;
+                                &:focus {
+                                    color: $grey;
+                                }
+                            }
+                        }
+                    }
+                    .news-button {
+                        margin-top: 40px;
+                        max-width: 134px;
+                        width: $w-100;
+                        height: 40px;
+                        background-color: $pink;
+                        border-radius: 6px;
+                        @include d-flex (flex,center, center);
+                        a {
+                            font-family: 'Helvetica', sans-serif;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-size: $p-11;
+                            font-weight: $bold;
+                        }
+                    }
+
+
                 }
+            }
+        }
+    }
+}
+
+
+.news-section-two {
+    background-color: $nav-col;
+    padding-top: 40px;
+    .news-section-two-container {
+        padding-top: 41px;
+        padding-bottom: 40px;
+        max-width: 1160px;
+        width: $w-100;
+        margin: $m-center;
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #EBEDED;
+        border-bottom: 2px solid #EBEDED;
+        .news-sec-two-one {
+            max-width: 360px;
+            width: $w-100;
+
+            p{
+                font-family: 'acumin-pro',sans-serif;
+                font-weight: $bold;
+                font-size: 24px;
+                color: $black;
+                line-height: 30px;
+                margin-top: 20px;
+            }
+        }
+
+        .news-sec-two-two {
+            max-width: 360px;
+            width: $w-100;
+            p {
+                font-family: 'Helvetica', sans-serif;
+                color: $grey;
+                line-height: 28px;
+                font-size: 14px;
+                font-weight: $regular;
+            }
+        }
+
+        .news-sec-two-three {
+            max-width: 360px;
+            width: $w-100;
+            p {
+                font-family: 'Helvetica', sans-serif;
+                color: $grey;
+                line-height: 28px;
+                font-size: 14px;
+                font-weight: $regular;
+            }
+
+            .time {
+                height: 16px;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                
+                img {
+                    margin-right: 10px;
+                }
+                p {
+                   padding-bottom: 2px;
+                }
+            }
+        }
+    }
+}
+
+.news-section-three {
+    background-color: $nav-col;
+    padding-bottom: 161px;
+    .news-section-three-container {
+        border-bottom: 2px solid #EBEDED;
+        max-width: 1160px;
+        width: $w-100;
+        margin: $m-center;
+        padding-bottom: 40px;
+        
+        p{
+            max-width: 760px;
+            width: $w-100;
+            font-family: 'Helvetica', sans-serif;
+            color: $grey;
+            line-height: 28px;
+            font-size: 14px;
+            font-weight: $regular;
+            margin-top: 40px;
+            &:nth-child(3) {
+                margin-top: 40px;
             }
         }
     }
