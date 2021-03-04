@@ -10,11 +10,15 @@ footer {
 
         .footer-logo {
             h2 {
-                font-family: 'acumin-pro',sans-serif;
-                font-weight: $bold;
-                font-size: 13px;
-                color: #fff;
-                text-transform: uppercase;
+                a {
+                    
+                        font-family: 'acumin-pro',sans-serif;
+                        font-weight: $bold;
+                        font-size: 13px;
+                        color: #fff;
+                        text-transform: uppercase;
+                    
+                }
             }
         }
 

@@ -14,7 +14,11 @@
             .logo {
                 @extend %div-logo;
                 h2 {
-                    @extend %logo;
+                    a {
+                        
+                            @extend %logo;
+                        
+                    }
                 }
             }
 

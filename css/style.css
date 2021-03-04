@@ -81,7 +81,7 @@ a {
   width: 100%;
   height: 12.8px; }
 
-.index-header .container .header-div .logo h2 {
+.index-header .container .header-div .logo h2 a {
   font-family: 'Helvetica', sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -325,7 +325,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     padding: 56px 0 60px 0px; }
-    footer .footer-container .footer-logo h2 {
+    footer .footer-container .footer-logo h2 a {
       font-family: 'acumin-pro',sans-serif;
       font-weight: 700;
       font-size: 13px;
@@ -961,7 +961,8 @@ footer {
 
 .news-section-two {
   background-color: #F6F8F9;
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .news-section-two .news-section-two-container {
     padding-top: 41px;
     padding-bottom: 40px;
