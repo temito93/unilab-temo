@@ -6,10 +6,10 @@
         height: $p-50;
         background-color: $nav-col;
         .header-div {
-            @media (max-width: 1440px) {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
+           @media (max-width:1440px) {
+               padding-left: 20px;
+               padding-right: 20px;
+           }
 
             
 
