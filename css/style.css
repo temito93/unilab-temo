@@ -152,6 +152,11 @@ a {
         max-width: 1400px;
         width: 100%;
         margin: 0 auto; } }
+    @media (max-width: 1366px) {
+      .index-header .container .header-div {
+        max-width: 1326px;
+        width: 100%;
+        margin: 0 auto; } }
     .index-header .container .header-div .nav-div {
       display: -webkit-box;
       display: -ms-flexbox;

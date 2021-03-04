@@ -12,6 +12,12 @@
                 margin: $m-center;
             }
 
+            @media (max-width: 1366px) {
+                max-width: 1326px;
+                width: $w-100;
+                margin: $m-center;
+            }
+
             
 
             @include d-flex (flex, space-between, center);
