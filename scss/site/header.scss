@@ -5,6 +5,7 @@
         align-items: center;
         height: $p-50;
         background-color: $nav-col;
+        
         .header-div {
            @media (max-width:1440px) {
                padding-left: 20px;
@@ -12,7 +13,12 @@
            }
 
             
-
+           .burger-icon {
+               display: none;
+               @media (max-width: 650px) {
+                   display: block;
+               }
+            }
             
 
             @include d-flex (flex, space-between, center);
@@ -31,11 +37,15 @@
             }
 
             .nav-div {
+                @media (max-width: 650px ) {
+                    display: none;
+                }
                 @include d-flex (flex, space-between, center);
 
-                max-width: 338px;
+                max-width: 350px;
                 width: $w-100;
                 nav {
+                    
                     height: 10px;
                     ul {
                         width: 267px;
@@ -59,9 +69,22 @@
                     }
                 }
                 .header-img {
+                    @media (max-width: 378px) {
+                        display: none;
+                    }
+                    
                     max-width: $p-30;
                     width: $w-100;
                     height: $p-30;
+                }
+                
+            }
+            
+
+            .header-img2 {
+                display: none;
+                @media (max-width: 650px) {
+                    display: inline-block;
                 }
             }
             
@@ -72,7 +95,11 @@
     .header-content {
         display: flex;
         
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
         .content-one {
+            
             background-image: url("../img/img1.jpg");
             background-repeat: no-repeat;
             max-width: 840px;
@@ -82,12 +109,50 @@
             justify-content: center;
             align-items: center;
             .content-info {
+                @media (max-width: 1235px) {
+                    padding-left: 20px;
+                }
+
+                @media (max-width: 768px) {
+                    max-width: 608px;
+                    width: $w-100;
+                    padding-left: 0;
+                }
+
+                @media (max-width: 625px) {
+                    max-width: 327px;
+                    width: $w-100;
+
+                }
                max-width: 600px;
                width: $w-100;
                height: 247px;
                
                 .content-title {
                     &::after {
+                        
+
+                        @media (max-width: 1185px) {
+                            max-width: 500px;
+                            width: $w-100;
+
+                        }
+                        @media (max-width: 1175px) {
+                            max-width: 400px;
+                            width: $w-100;
+
+                        }
+
+                        @media (max-width: 876px) {
+                            max-width: 300px;
+                            width: $w-100;
+
+                        }
+
+                        @media (max-width: 768px) {
+                            max-width: 600px;
+                            width: $w-100;
+                        }
                        content: '';
                        max-width: 560px;
                        width: $w-100;
@@ -103,13 +168,25 @@
                 }
 
                 .content-text {
+                    @media (max-width: 768px) {
+                        max-width: 608px;
+                        width: $w-100;
+                    }
                     max-width: 530px;
                     width: $w-100;
                     h2 {
                         @extend %main-parameters;
+                        span {
+                            @media (max-width: 378px) {
+                                display: none;
+                            }
+                        }
                     }
 
                     p {
+                        @media (max-width: 625px) {
+                            margin-top: 42px;
+                        }
                         
                         @extend %p-parameters;
                         color: #fff;
@@ -137,18 +214,57 @@
         }
 
         .content-two {
+            @media (max-width: 768px) {
+                max-width: 768px;
+                width: $w-100;
+                
+            }
+
+            @media (max-width: 625px) {
+                max-with: 625px;
+                width: $w-100;
+
+            }
             max-width: 600px;
-            width: $w-100;
             height: 600px;
+            width: $w-100;
+            
             display: flex;
             align-items: center;
+            
             .content-two-info {
+                @media (max-width: 768px) {
+                    max-width: 608px;
+                    width: $w-100;
+                    margin-left: 0;
+                    margin: $m-center;
+                    margin-top: 40px;
+                    height: 343px;
+                }
+
+                @media (max-width: 625px) {
+                    max-width: 327px;
+                    width: $w-100;
+                    
+                    height: 398px;
+                }
                 margin-left: 100px;
                 max-width: 380px;
                 width: $w-100;
-
+                
+                
                 .content-two-title {
+                    
                     &::after {
+                        @media (max-width: 768px) {
+                            max-width: 608px;
+                            width: $w-100;
+                        }
+                        @media (max-width: 625px) {
+                            max-with: 327px;
+                            width: $w-100;
+                            
+                        }
                         content: '';
                         border-bottom: 2px solid $light-grey;
                         display: block;
@@ -157,11 +273,22 @@
                         margin-top: 40px;
                     }
                     h2 {
+                        
                         font-family: 'Helvetica', sans-serif;
                         text-transform: uppercase;
                         font-size: 24px;
                         font-weight: $bold;
                         .arrow-left {
+                            @media (max-width: 768px) {
+                                padding-top: 0;
+                                padding-left: 391px;
+                                
+                            }
+
+                            @media (max-width: 625px) {
+                                padding-left: 0;
+                                margin-left: 110px;
+                            }
                             padding-top: 4px;
                             padding-left: 163px;
                             padding-right: 40px;
@@ -170,6 +297,10 @@
                             vertical-align: top;
                         }
                         .arrow-right {
+                            @media (max-width: 768px) {
+                                padding-top: 0;
+                                
+                            }
                             padding-top: 4px;
                             vertical-align: top;
                             color: $black;
@@ -179,8 +310,23 @@
                 }
                 
                 .content-two-text{
+                    @media (max-width: 768px) {
+                        
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    @media (max-width: 625px) {
+                        flex-direction: column;
+                        
+                    }
                     margin-top: 41px;
                     .text-one {
+                        @media (max-width: 768px) {
+                            max-width: 284px;
+                            width: $w-100;
+                            
+                            
+                        }
                         h2 {
                             @extend %text-h2;
                         }
@@ -208,6 +354,16 @@
                     }
 
                     .text-two {
+                        @media (max-width: 768px) {
+                            max-width: 284px;
+                            width: $w-100;
+
+                            margin-top: 0;
+                        }
+
+                        @media (max-width: 625px) {
+                            margin-top: 40px;
+                        }
                         margin-top: 40px;
                         h2 {
                             @extend %text-h2;

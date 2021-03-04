@@ -1,7 +1,19 @@
 footer {
     background-color: $grey;
-
+    @media (max-width: 625px) {
+        display: none;
+    }
     .footer-container {
+        @media (max-width: 1185px) {
+            max-width: 608px;
+            width: $w-100;
+            flex-wrap: wrap;
+            
+        }
+        @media (max-width: 625px) {
+            flex-direction: column;
+            align-items: center;
+        }
         max-width: 1160px;
         width: $w-100;
         margin: $m-center;
@@ -9,6 +21,15 @@ footer {
         padding: 56px 0 60px 0px;
 
         .footer-logo {
+            @media (max-width: 1185px) {
+                
+                margin-right: 224px;
+            }
+            @media (max-width: 625px) {
+                max-width: 36px;
+                width: $w-100;
+                margin-right: 0;
+            }
             a {
                 h2 {
                     
@@ -23,6 +44,13 @@ footer {
         }
 
         .footer-nav-one {
+            @media (max-width: 625px) {
+                max-width: 85px;
+                width: $w-100;
+                margin-left: 0;
+                text-align: center;
+                margin-top: 20px;
+            }
             margin-left: 60px;
             nav {
                 ul {
@@ -44,6 +72,13 @@ footer {
         }
 
         .footer-nav-two {
+            @media (max-width: 625px) {
+                max-width: 85px;
+                width: $w-100;
+                margin-left: 0;
+                text-align: center;
+                margin-top: 20px;
+            }
             margin-left: 41.7px;
             nav {
                 ul {
@@ -66,6 +101,13 @@ footer {
 
 
         .footer-nav-three {
+            @media (max-width: 625px) {
+                max-width: 85px;
+                width: $w-100;
+                margin-left: 0;
+                text-align: center;
+                margin-top: 20px;
+            }
             margin-left: 44.6px;
             nav {
                 ul {
@@ -87,6 +129,15 @@ footer {
         }
 
         .footer-form {
+            @media (max-width: 1185px) {
+                margin-left: 0;
+                margin-top: 50px;
+            }
+            @media (max-width: 625px) {
+                
+                margin-top: 20;
+            }
+            
             margin-left: 219.8px;
             form {
                 max-width: 262px;
@@ -142,6 +193,15 @@ footer {
         }
 
         .footer-soc {
+            @media (max-width: 1185px) {
+                
+                margin-left: 448.2px;
+            }
+            @media (max-width: 625px) {
+                margin-top: 20px;
+                margin-left: 0;
+            }
+            
             max-width: 160px;
             width: $w-100;
             display: flex;
