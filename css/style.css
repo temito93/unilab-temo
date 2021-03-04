@@ -147,29 +147,9 @@ a {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto; }
-    @media (max-width: 1920px) {
-      .index-header .container .header-div {
-        max-width: 1880px;
-        width: 100%;
-        margin: 0 auto; } }
-    @media (max-width: 1680px) {
-      .index-header .container .header-div {
-        max-width: 1640px;
-        width: 100%;
-        margin: 0 auto; } }
-    @media (max-width: 1600px) {
-      .index-header .container .header-div {
-        max-width: 1440px;
-        width: 100%;
-        margin: 0 auto; } }
     @media (max-width: 1440px) {
       .index-header .container .header-div {
         max-width: 1400px;
-        width: 100%;
-        margin: 0 auto; } }
-    @media (max-width: 1366px) {
-      .index-header .container .header-div {
-        max-width: 1326px;
         width: 100%;
         margin: 0 auto; } }
     .index-header .container .header-div .nav-div {
