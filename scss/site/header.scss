@@ -1,20 +1,33 @@
 .index-header {
 
     .container {
-        
+        display: flex;
+        align-items: center;
         height: $p-50;
         background-color: $nav-col;
         .header-div {
-            padding-top: 19px;
-            height: 30px;
+            
+            
+            @media (min-width: 1366px) {
+                max-width: 1326px;
+                width: $w-100;
+                margin: $m-center;
+            }
+
+            @media (min-width: 1440px) {
+                max-width: 1400px;
+                width: $w-100;
+                margin: $m-center;
+            }
+
             @include d-flex (flex, space-between, center);
             max-width: 1440px;
             width: $w-100;
             margin: $m-center;
             .logo {
                 @extend %div-logo;
-                h2 {
-                    a {
+                a {
+                    h2 {
                         
                             @extend %logo;
                         
