@@ -7,18 +7,38 @@
         background-color: $nav-col;
         .header-div {
             
-            
-            @media (min-width: 1366px) {
+            @media (max-width: 1920px) {
+                max-width: 1880px;
+                width: $w-100;
+                margin: $m-center;
+            }
+
+            @media (max-width: 1680px) {
+                max-width: 1640px;
+                width: $w-100;
+                margin: $m-center;
+            }
+
+            @media (max-width: 1600px) {
+                max-width: 1560px;
+                width: $w-100;
+                margin: $m-center;
+            }
+
+
+            @media (max-width: 1440px) {
+                max-width: 1400px;
+                width: $w-100;
+                margin: $m-center;
+            }
+
+            @media (max-width: 1366px) {
                 max-width: 1326px;
                 width: $w-100;
                 margin: $m-center;
             }
 
-            @media (min-width: 1440px) {
-                max-width: 1400px;
-                width: $w-100;
-                margin: $m-center;
-            }
+            
 
             @include d-flex (flex, space-between, center);
             max-width: 1440px;
